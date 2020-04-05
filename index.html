@@ -30,12 +30,13 @@
         display: block;
         text-align: center;
     }
+    
     .img1 {
         width: 100px;
-        height: 200px;
+        height: 100px;
         float: left;
         background-repeat: repeat-y;
-        animation: aanimate 8s infinite;
+        animation: animate 8s infinite;
     }
     @keyframes animate
     {
@@ -43,11 +44,52 @@
             background-position: 0 0;
         }
         to {
-            background-position: 50% 0);
+            background-position: 50% 0;
         }
     }
+    
     .img2 {
-        width: 
+        width: 300px;
+        float: right;
+        background-repeat: repeat-y;
+        animation: animate 8s infinite;
+    }
+    
+    
+    
+    html {
+    height: 0%;
+    background-color: #FFFFFF;
+    background-image:       
+        
+        url('img/shangrila_illust-01.png'),
+       
+        url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+        0 20%,
+        0 100%,
+        0 50%,
+        0 100%,
+        0 0;
+    background-size: 
+        300px,
+        400px,
+        500px 200px,
+        1000px,
+        400px 260px;
+    animation: 60s para infinite linear;
+    }
+
+@keyframes para {
+    100% {
+        background-position: 
+            -5000px 20%,
+            -800px 95%,
+            500px 50%,
+            1000px 100%,
+            400px 0;
+        }
     }
 </style>  
     
@@ -56,24 +98,21 @@
     <img src="shangrila_green_logo.png" style="width:100px;height:50px;float:left">
         <div class="imgbox">
             <img src="logo_animation.gif" alt="centered image" style="width:500px">
-        </div>
-    <div class="img1">
-        <img src="img/shangrila_illust-01.png" style="width:200px;height:200px;float:left">
-        <img src="img/shangrila_illust-02.png" style="width:300px;height:300px:float:right">
-
-    </div>
-        <div class="imgbox">
-            <div class="text">
+              <div class="text">
                 <img src="img/text-06.png" alt="centered image" style="width:500px">   
             </div>
         </div>
         
-        
-  
+    <div class="img1">
+        <img src="img/shangrila_illust-02.png" style="width:400px;height:300px:float:right">
+    </div>
+    <div class="img2">
+        <img src="img/shangrila_illust-04.png" style="width:300px;float:right">
+    </div> 
+     
+        <div class="imgbox"></div>
    
     </div>
-
-    
 </body>
 </head>
 </html>
